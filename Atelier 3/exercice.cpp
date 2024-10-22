@@ -11,7 +11,6 @@ private:
     float vitesse;
 
 public:
-    // Constructeur par défaut
     Voiture() {
         marque = "Inconnue";
         modele = "Inconnu";
