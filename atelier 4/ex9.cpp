@@ -56,9 +56,9 @@ public:
 int main() {
     Liste maListe;
 
+    maListe.ajouter(12);
+    maListe.ajouter(8);
     maListe.ajouter(10);
-    maListe.ajouter(20);
-    maListe.ajouter(30);
 
     maListe.afficher();
 
