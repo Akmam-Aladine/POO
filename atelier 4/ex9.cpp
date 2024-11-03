@@ -11,19 +11,17 @@ struct Element {
 
 class Liste {
 private:
-    Element* premier;  // Pointeur vers le premier élément de la liste
+    Element* premier; 
 
 public:
     Liste() : premier(nullptr) {}
 
-    // Méthode pour ajouter un élément au début de la liste
     void ajouter(int val) {
         Element* nouvelElement = new Element(val);
         nouvelElement->suivant = premier;
         premier = nouvelElement;
     }
 
-    // Méthode pour supprimer un élément du début de la liste
     void supprimer() {
         if (premier) {
             Element* temp = premier;
@@ -32,7 +30,6 @@ public:
         }
     }
 
-    // Méthode pour afficher la liste en entier
     void afficher() {
         Element* courant = premier;
         cout << "Liste : ";
@@ -54,16 +51,16 @@ public:
 };
 
 int main() {
-    Liste maListe;
+    Liste _Liste;
 
-    maListe.ajouter(12);
-    maListe.ajouter(8);
-    maListe.ajouter(10);
+    _Liste.ajouter(12);
+    _Liste.ajouter(8);
+    _Liste.ajouter(10);
 
-    maListe.afficher();
+    _Liste.display();
 
-    maListe.supprimer();
-    maListe.afficher();
+    _Liste.supprimer();
+    _Liste.display();
 
     return 0;
 }
